@@ -1,4 +1,4 @@
-name: my first worflow
+name: generate ascii_job
 
 on: push
 

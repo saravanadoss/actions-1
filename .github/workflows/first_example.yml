@@ -14,6 +14,17 @@ jobs:
                   echo "my first github actions"
                   ls
                   cat README.md
+              - name: Excute Cowsay CMD
+                run: Cowsay -f dragon "run for Cover, I am a dragon...RAWR" >> dragon.txt
+
+              - name: Test File Exists
+                run: grep -i "dragon" dragon.txt
+
+              - name: read file
+                run: cat dragon.txt
+
+              - name: List| Repo Files
+                run: ls -ltra
 
               
 

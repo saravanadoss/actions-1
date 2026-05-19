@@ -1,5 +1,5 @@
-name: generate ascii_job
 
+name: generate ascii
 on: push
 
 jobs:

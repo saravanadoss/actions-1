@@ -16,7 +16,7 @@ jobs:
                   cat README.md
                   
               - name: Excute Cowsay CMD
-                run: Cowsay -f dragon "run for Cover, I am a dragon...RAWR" >> dragon.txt
+                run: cowsay -f dragon "run for Cover, I am a dragon...RAWR" >> dragon.txt
 
               - name: Test File Exists
                 run: grep -i "dragon" dragon.txt

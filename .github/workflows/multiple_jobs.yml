@@ -15,7 +15,7 @@ jobs:
                   ls
                   cat README.md
                   
-              - name: Excute Cowsay CMD
+              - name: Excute cowsay CMD
                 run: cowsay -f dragon "run for Cover, I am a dragon...RAWR" >> dragon.txt
 
               - name: Sleep for 30 seconds

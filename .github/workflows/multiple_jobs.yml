@@ -1,0 +1,45 @@
+name: my first worflow
+
+on: push
+
+jobs:
+    build_job:
+            runs-on: ubuntu-latest
+            steps:
+              - name: checkout repo
+                uses: actions/checkout@v6
+                
+              - name: List and Read file
+                run: |
+                  echo "my first github actions"
+                  ls
+                  cat README.md
+                  
+              - name: Excute Cowsay CMD
+                run: cowsay -f dragon "run for Cover, I am a dragon...RAWR" >> dragon.txt
+
+              - name: Sleep for 30 seconds
+                run: sleep 30
+    test_job:
+        runs-on:   ubuntu-latest
+        steps:
+               - name: Sleep for 10 seconds
+                 run: Sleep for 10
+                 
+               - name: Test File Exists
+                 run: grep -i "dragon" dragon.txt
+
+
+    deploy_job:
+        runs-on:    ubuntu-latest
+        steps:
+        - name: Read File
+          run: cat dragon.txt
+
+        - name: Deploy
+          run: echo Deploying .... ....
+
+
+
+            
+

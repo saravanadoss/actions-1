@@ -7,8 +7,6 @@ on:
 jobs: 
   deploy:
       strategy:
-      
-        
         matrix:
           os: [ubuntu-latest, ubuntu-20.4, windows-latest]
           Images: [hello-world, alpine]

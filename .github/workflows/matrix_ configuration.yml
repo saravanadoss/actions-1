@@ -7,12 +7,13 @@ on:
 jobs: 
   deploy:
     strategy:
+      max-parallel: 2
       matrix:
-        os: [ubuntu-latest, ubuntu-26]
+        os: [ubuntu-latest, ubuntu-20.4]
         Images: [hello-world, alpine]
-        exclude:
-            - images: alpine
-              os: windows-latest
+        # exclude:
+        #     - images: alpine
+        #       os: windows-latest
         # include:
         #     - images: amd64/alpine
         #       os: ubuntu 24.4

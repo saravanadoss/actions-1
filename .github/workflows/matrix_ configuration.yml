@@ -9,7 +9,7 @@ jobs:
       strategy:
         matrix:
           os: [ubuntu-latest, ubuntu-20.4, windows-latest]
-          Images: [hello world, alpine]
+          Images: [hello-world, alpine]
 
 
     

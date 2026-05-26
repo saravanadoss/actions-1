@@ -9,14 +9,14 @@ jobs:
     strategy:
       max-parallel: 2
       matrix:
-        os: [ubuntu-latest, ubuntu-20.04.6]
+        os: [ubuntu-latest, ubuntu 20.04, windows-latest]
         Images: [hello-world, alpine]
-        # exclude:
-        #     - images: alpine
-        #       os: windows-latest
-        # include:
-        #     - images: amd64/alpine
-        #       os: ubuntu 24.4
+        exclude:
+            - images: alpine
+              os: ubuntu 20.04
+        include:
+            - images: amd64/alpine
+              os: ubuntu 24.4
     
     runs-on: ${{matrix.os}}
     steps:

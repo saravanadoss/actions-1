@@ -9,7 +9,7 @@ jobs:
     strategy:
       max-parallel: 2
       matrix:
-        os: [ubuntu-latest, ubuntu-23.10]
+        os: [ubuntu-latest, ubuntu-20.04]
         Images: [hello-world, alpine]
         # exclude:
         #     - images: alpine

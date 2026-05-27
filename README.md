@@ -6,6 +6,6 @@ We will learning Github actions,
 - Technical Skills: Python (structured learning plan), Go (practical coding challenges), foundational HTML.
 - Analytical Strengths: Problem‑solving, logistical planning, structured learning approaches.
 
-we learn github actions soon
+we learn github actions soon - adding this line to test Skip workflow runs
 
 
